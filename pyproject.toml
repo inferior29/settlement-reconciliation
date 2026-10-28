@@ -1,0 +1,14 @@
+[project]
+name = "settlement-recon"
+version = "0.1.0"
+description = "AI-assisted settlement reconciliation (synthetic data)"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.0", "numpy>=1.24"]
+
+[project.optional-dependencies]
+claude = ["anthropic>=0.40"]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
